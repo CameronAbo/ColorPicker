@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="30">
+
+            <Switch
+                android:id="@+id/redSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="13"
+                android:trackTint="#FF0000"
+                />
+
+            <SeekBar
+                android:id="@+id/redSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:max="255"
+                android:min="0"
+                android:progress="0"
+                android:layout_gravity="center"
+                android:progressBackgroundTint="#FF0000"/>
+
+
+
+            <TextView
+                android:id="@+id/redTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="9pt"
+                android:text="@string/_0_00"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="30">
+
+            <Switch
+                android:id="@+id/greenSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="13"
+                android:layout_gravity="center"
+                android:trackTint="#008000"
+                />
+
+            <SeekBar
+                android:id="@+id/greenSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:backgroundTint="#008000"
+                android:foregroundTint="#008000"
+                android:indeterminateTint="#008000"
+                android:max="255"
+                android:min="0"
+                android:progress="0"
+                android:progressBackgroundTint="#008000"
+                android:progressTint="#008000"
+                android:secondaryProgressTint="#008000" />
+
+
+
+            <TextView
+                android:id="@+id/greenTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="9pt"
+                android:text="@string/_0_00"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="30">
+
+            <Switch
+                android:id="@+id/blueSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="13"
+                android:layout_gravity="center"
+                android:trackTint="#0000FF"
+                />
+
+            <SeekBar
+                android:id="@+id/blueSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:max="255"
+                android:min="0"
+                android:progress="0"
+                android:layout_gravity="center"
+                android:progressBackgroundTint="#0000FF"/>
+
+
+
+            <TextView
+                android:id="@+id/blueTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="9pt"
+                android:text="@string/_0_00"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Reset" />
+    </LinearLayout>
+</LinearLayout>
