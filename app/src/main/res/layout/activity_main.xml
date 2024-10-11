@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@color/black"
-        android:layout_margin="20dp"/>
+        android:layout_margin="20dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,8 @@
                 android:min="0"
                 android:progress="0"
                 android:layout_gravity="center"
-                android:progressBackgroundTint="#FF0000"/>
+                android:progressBackgroundTint="#FF0000"
+                android:progressTint="#FF0000"/>
 
 
 
@@ -80,15 +81,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="5"
-                android:backgroundTint="#008000"
-                android:foregroundTint="#008000"
-                android:indeterminateTint="#008000"
                 android:max="255"
                 android:min="0"
                 android:progress="0"
                 android:progressBackgroundTint="#008000"
-                android:progressTint="#008000"
-                android:secondaryProgressTint="#008000" />
+                android:progressTint="#008000" />
 
 
 
@@ -129,7 +126,8 @@
                 android:min="0"
                 android:progress="0"
                 android:layout_gravity="center"
-                android:progressBackgroundTint="#0000FF"/>
+                android:progressBackgroundTint="#0000FF"
+                android:progressTint="#0000FF"/>
 
 
 
