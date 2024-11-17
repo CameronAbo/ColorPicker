@@ -17,21 +17,22 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027"
-        app:layout_constraintWidth_percent="0.6"
-        app:layout_constraintHeight_percent="0.3"/>
+        app:layout_constraintWidth_percent="0.3" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_margin="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight_percent="0.6"
-        app:layout_constraintTop_toBottomOf="@+id/colorView"
-        tools:layout_editor_absoluteX="16dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/colorView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.6">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +45,7 @@
             <Switch
                 android:id="@+id/redSwitch"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_weight="4"
                 android:trackTint="#FF0000" />
@@ -89,7 +90,7 @@
             <Switch
                 android:id="@+id/greenSwitch"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_weight="4"
                 android:trackTint="#008000" />
@@ -105,7 +106,7 @@
                 android:progress="0"
                 android:progressBackgroundTint="#008000"
                 android:progressTint="#008000"
-                android:thumbTint="#008000"/>
+                android:thumbTint="#008000" />
 
 
             <EditText
@@ -132,7 +133,7 @@
             <Switch
                 android:id="@+id/blueSwitch"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_weight="4"
                 android:trackTint="#0000FF" />
@@ -148,7 +149,7 @@
                 android:progress="0"
                 android:progressBackgroundTint="#0000FF"
                 android:progressTint="#0000FF"
-                android:thumbTint="#0000FF"/>
+                android:thumbTint="#0000FF" />
 
 
             <EditText
@@ -171,7 +172,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:text="Reset"
+            android:text="@string/reset"
             android:textSize="10pt" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
