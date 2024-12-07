@@ -304,35 +304,42 @@ class MainActivity : AppCompatActivity(), SharedPreferences.OnSharedPreferenceCh
     private fun update(color:Int, colorVal:Int) {
         if(color == RED) {
             savedRValue = colorVal
-            redColorValue = savedRValue
-
-            redTextView.text = String.format("%.2f", (redColorValue / 255f))
+            redTextView.text = String.format("%.2f", (savedRValue / 255f))
             redSeekBar.progress = savedRValue
             redSwitch.isChecked = redEnabled
             redSeekBar.isEnabled = !redEnabled
             redTextView.isEnabled = !redEnabled
+            redColorValue = 0
+            if(!redEnabled)
+                redColorValue = savedRValue
+
         }
         else if(color == GREEN){
             savedGValue = colorVal
-            greenColorValue = savedGValue
 
-            greenTextView.text = String.format("%.2f", (greenColorValue / 255f))
+
+            greenTextView.text = String.format("%.2f", (savedGValue / 255f))
             greenSeekBar.progress = savedGValue
             greenSwitch.isChecked = greenEnabled
             greenSeekBar.isEnabled = !greenEnabled
             greenTextView.isEnabled = !greenEnabled
+            greenColorValue = 0
+            if(!greenEnabled)
+                greenColorValue = savedGValue
         }
-        else if(color == BLUE){
+        else if(color == BLUE) {
             savedBValue = colorVal
-            blueColorValue = savedBValue
 
-            blueTextView.text = String.format("%.2f", (blueColorValue / 255f))
+
+            blueTextView.text = String.format("%.2f", (savedBValue / 255f))
             blueSeekBar.progress = savedBValue
             blueSwitch.isChecked = blueEnabled
             blueSeekBar.isEnabled = !blueEnabled
             blueTextView.isEnabled = !blueEnabled
+            blueColorValue = 0
+            if(!blueEnabled)
+                blueColorValue = savedBValue
         }
-
     }
     private fun setRGBColor():String {
         val hex = String.format(
